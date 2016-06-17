@@ -1,0 +1,31 @@
+{
+  "name": "jg-react-boilerplate",
+  "version": "0.0.1",
+  "description": "My standard setup for small React projects - NOT intended for prod",
+  "main": "index.js",
+  "scripts": {
+    "build-dev": "webpack --progress --colors --config ./webpack.config.js",
+    "start": "npm run build-dev; node server/server.js"
+  },
+  "author": "Jarrett Gliner",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "express": "^4.13.4",
+    "morgan": "^1.7.0",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "webpack": "^1.13.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.9.1",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-react-hmre": "^1.1.1",
+    "babel-preset-stage-0": "^6.5.0",
+    "webpack-dev-middleware": "^1.6.1",
+    "webpack-hot-middleware": "^2.10.0",
+    "webpack-node-externals": "^1.2.0"
+  }
+}
